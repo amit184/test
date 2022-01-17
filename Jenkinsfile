@@ -4,7 +4,11 @@ pipeline{
   stages{
     stage("build"){
       steps{
-        sh echo "In the building phase!"
+        echo "In the building phase!"
+      }
+     stage("test"){
+      steps{
+        echo "In the testing phase!"
       }
     }
   }
